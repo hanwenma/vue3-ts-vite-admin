@@ -1,0 +1,15 @@
+# http://editorconfig.org
+
+root = true
+
+[*] # 所有文件都适用
+charset = utf-8 # 设置字符集为 utf-8
+indent_style = space # 缩进风格：space | tab
+indent_size = 2 # 缩进大小
+end_of_line = lf # 换行符类型：lf | cr | crlf
+insert_final_newline = true # 去除首行的任意空白字符
+trim_trailing_whitespace = true # 始终在文件末尾插入一个新行
+
+[*.md] # 表示仅 .md 文件使用以下规则
+insert_final_newline = false
+trim_trailing_whitespace = false
