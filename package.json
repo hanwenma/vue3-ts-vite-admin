@@ -8,7 +8,8 @@
     "preview": "vite preview",
     "prettier": "prettier --write .",
     "prepare": "husky install",
-    "commit": "cz"
+    "commit": "cz",
+    "lint": "eslint --fix --ext .ts,.vue src"
   },
   "dependencies": {
     "vue": "^3.2.25"

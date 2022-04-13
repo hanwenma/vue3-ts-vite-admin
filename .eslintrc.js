@@ -2,6 +2,7 @@ module.exports = {
   env: {
     es6: true,
     node: true,
+    'vue/setup-compiler-macros': true,
   },
   extends: [
     'plugin:vue/vue3-essential',
