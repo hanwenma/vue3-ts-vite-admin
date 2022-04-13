@@ -21,5 +21,7 @@ module.exports = {
   rules: {
     'no-useless-escape': 0,
     'no-empty': 0,
+    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
   },
 };

@@ -3,8 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "dev": "vite --mode dev",
+    "test": "vue-tsc --noEmit && vite --mode test",
+    "build": "vue-tsc --noEmit && vite --mode prod",
     "preview": "vite preview",
     "prettier": "prettier --write .",
     "prepare": "husky install",
