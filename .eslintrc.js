@@ -1,6 +1,6 @@
 module.exports = {
   env: {
-    es6: true,
+    // es6: true,
     node: true,
     'vue/setup-compiler-macros': true,
   },
@@ -9,6 +9,16 @@ module.exports = {
     'airbnb-base',
     // 'plugin:prettier/recommended',
   ],
+  settings: {
+    'import/resolver': {
+      alias: {
+        map: [
+          ['@', './src', './'],
+        ],
+        extensions: ['.ts', '.js', '.jsx', '.tsx'], // 可忽略的后缀名
+      },
+    },
+  },
   parserOptions: {
     ecmaVersion: 'latest',
     parser: '@typescript-eslint/parser',
@@ -19,9 +29,29 @@ module.exports = {
     '@typescript-eslint',
   ],
   rules: {
-    'no-useless-escape': 0,
-    'no-empty': 0,
+    'no-unused-vars': 'off',
+    'import/no-unresolved': 'off',
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'prefer-destructuring': [
+      'error',
+      {
+        array: false,
+        object: false,
+      },
+      {
+        enforceForRenamedProperties: false,
+      },
+    ],
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never',
+      },
+    ],
   },
 };

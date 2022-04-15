@@ -7,7 +7,7 @@ const testApiHost = 'http://test.example.com';
 // 生产环境 API 地址
 const prodApiHost = 'http://prod.example.com';
 
-module.exports = {
+export default {
   dev: {
     base: './', // https://vitejs.cn/config/#base
     apiHost: devApiHost,
