@@ -33,6 +33,7 @@ module.exports = {
     'import/no-unresolved': 'off',
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'arrow-body-style': ['off'],
     'prefer-destructuring': [
       'error',
       {
@@ -41,6 +42,12 @@ module.exports = {
       },
       {
         enforceForRenamedProperties: false,
+      },
+    ],
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: true,
       },
     ],
     'import/extensions': [
