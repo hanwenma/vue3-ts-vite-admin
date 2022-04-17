@@ -16,6 +16,9 @@ export default defineConfig(({ mode }) => {
       alias: {
         '@': getAbsPath('./src'),
         '@components': getAbsPath('./src/components'),
+        '@utils': getAbsPath('./src/utils'),
+        '@pages': getAbsPath('./src/pages'),
+        '@build': getAbsPath('./build'),
       },
     },
   };

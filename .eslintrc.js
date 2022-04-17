@@ -30,7 +30,9 @@ module.exports = {
   ],
   rules: {
     'no-unused-vars': 'off',
+    'no-plusplus': 'off',
     'import/no-unresolved': 'off',
+    'no-param-reassign': 'off',
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'arrow-body-style': ['off'],

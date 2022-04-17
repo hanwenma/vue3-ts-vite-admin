@@ -2,9 +2,11 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import { onMounted } from 'vue';
+import { get } from '@/utils/request';
 
-onMounted(() => {
-  console.log('import.meta.env.VITE_API_ENV = ', import.meta.env.VITE_API_ENV);
+onMounted(async () => {
+  const data = await get('/getList');
+  console.log('onMounted >>>>>', data);
 });
 </script>
 
