@@ -2,11 +2,9 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import { onMounted } from 'vue';
-import { get } from '@/utils/request';
 
 onMounted(async () => {
-  const data = await get('/getList');
-  console.log('onMounted >>>>>', data);
+  console.log('App onMounted ...');
 });
 </script>
 
