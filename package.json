@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite --mode dev",
-    "test": "vue-tsc --noEmit && vite --mode test",
-    "build": "vue-tsc --noEmit && vite --mode prod",
+    "test": "vue-tsc --noEmit && vite build --mode test",
+    "build": "vue-tsc --noEmit && vite build --mode prod",
     "preview": "vite preview",
     "prettier": "prettier --write .",
     "prepare": "husky install",
@@ -24,6 +24,7 @@
     "@commitlint/cli": "^16.2.3",
     "@commitlint/config-conventional": "^16.2.1",
     "@types/js-cookie": "^3.0.1",
+    "@types/node": "^17.0.25",
     "@typescript-eslint/eslint-plugin": "^5.19.0",
     "@typescript-eslint/parser": "^5.19.0",
     "@vitejs/plugin-vue": "^2.3.0",

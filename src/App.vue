@@ -4,7 +4,7 @@
 import { onMounted } from 'vue';
 
 onMounted(async () => {
-  console.log('App onMounted ...');
+  console.log('App onMounted ...', import.meta.env.VITE_API_ENV);
 });
 </script>
 

@@ -1,8 +1,8 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
 import NotFound from '@/pages/notFound/index.vue';
+import baseConfig from '@build/base.config';
 import home from './routes/home';
 import about from './routes/about';
-import baseConfig from '../../build/base.config';
 
 const envConfig = (baseConfig as any)[import.meta.env.VITE_API_ENV];
 
