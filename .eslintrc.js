@@ -30,6 +30,7 @@ module.exports = {
   ],
   rules: {
     'no-unused-vars': 'off',
+    'consistent-return': 'off',
     'no-plusplus': 'off',
     'import/no-unresolved': 'off',
     'no-param-reassign': 'off',
@@ -46,12 +47,7 @@ module.exports = {
         enforceForRenamedProperties: false,
       },
     ],
-    'import/no-extraneous-dependencies': [
-      'error',
-      {
-        devDependencies: true,
-      },
-    ],
+    'import/no-extraneous-dependencies': 'off',
     'import/extensions': [
       'error',
       'ignorePackages',
