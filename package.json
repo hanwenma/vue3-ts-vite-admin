@@ -16,7 +16,9 @@
     "axios": "^0.26.1",
     "element-plus": "^2.1.10",
     "js-cookie": "^3.0.1",
+    "less": "^4.1.2",
     "moment": "^2.29.2",
+    "normalize.css": "^8.0.1",
     "pinia": "^2.0.13",
     "vue": "^3.2.25",
     "vue-router": "^4.0.14"
@@ -38,7 +40,6 @@
     "eslint-plugin-vue": "^8.6.0",
     "husky": "^7.0.0",
     "prettier": "2.6.2",
-    "sass": "^1.50.0",
     "typescript": "^4.5.4",
     "unplugin-auto-import": "^0.7.1",
     "unplugin-vue-components": "^0.19.3",

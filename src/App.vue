@@ -54,7 +54,7 @@ onMounted(async () => {
   </el-row>
 </template>
 
-<style lang="scss">
+<style lang="less">
 #app {
   text-align: center;
 
